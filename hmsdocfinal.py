@@ -174,7 +174,7 @@ from twilio.rest import Client
 
 # Twilio credentials
 TWILIO_SID = 'AC333d68c1ba6f470d58d9efb24845a2d2'
-TWILIO_AUTH_TOKEN = 'c40d224da730e1f438bf0c9cdaa80999'
+TWILIO_AUTH_TOKEN = os.getenv("TOKEN", "")
 TWILIO_PHONE_NUMBER = '919025740676'
 
 # Create a Twilio client
